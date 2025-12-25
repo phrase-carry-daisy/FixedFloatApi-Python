@@ -8,6 +8,7 @@ This directory contains example clients for the Crypto Exchange Backend API in v
 |------|----------|-------------|
 | `client_example.py` | Python | Full-featured Python client with all API methods |
 | `client_javascript.js` | JavaScript/Node.js | Node.js client using axios |
+| `client_bun.ts` | Bun/TypeScript | Bun.js client with TypeScript support (no external dependencies) |
 | `client_go.go` | Go | Go client with typed requests/responses |
 | `client_php.php` | PHP | PHP client using cURL |
 | `client_curl.sh` | Bash/cURL | Shell script with cURL commands |
@@ -42,6 +43,21 @@ export API_BASE_URL="http://localhost:12000"
 
 # Run
 node client_javascript.js
+```
+
+### Bun.js
+
+```bash
+# Install Bun (if not already installed)
+# curl -fsSL https://bun.sh/install | bash
+
+# Set environment variables
+export API_KEY="your_api_key"
+export API_SECRET="your_api_secret"
+export API_BASE_URL="http://localhost:12000"
+
+# Run (no dependencies needed!)
+bun run client_bun.ts
 ```
 
 ### Go
